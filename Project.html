@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    SheCode Project
+</title>
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: darkseagreen;
+            }
+.first{
+    margin-left: auto;
+    margin-right: auto;
+    height: 50px;
+    width: 300px;
+    border: 2px solid darkgreen;
+    color: darkgreen;
+    font-family:serif;
+}
+div{
+    text-align: center;
+}
+span{
+    position: absolute;
+    right: 10px;
+    top: 5px;
+}
+h2{
+    text-align: center;
+    font-size: larger;
+    font-weight: 100;
+    font-family:serif;
+    color: darkgreen;
+    }
+    p{
+        text-align: center;
+        color: darkgreen;
+        font-size: larger;
+        font-family:serif;
+         font-weight: 100;
+    }
+section{
+        color: darkgreen;
+        font-size: larger;
+        font-family:serif;
+        font-weight: 100;
+
+}
+    .button {
+        background-color: #1c87c9;
+        -webkit-border-radius: 60px;
+        border-radius: 60px;
+        border: none;
+        color: #eeeeee;
+        cursor: pointer;
+        display: inline-block;
+        font-family:serif;
+        font-size: 20px;
+        padding: 10px 10px;
+        text-align: center;
+        text-decoration: none;
+      }
+      @keyframes glowing {
+        0% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+        50% {
+          background-color: #49e819;
+          box-shadow: 0 0 20px #49e819;
+        }
+        100% {
+          background-color: #2ba805;
+          box-shadow: 0 0 5px #2ba805;
+        }
+      }
+      .button {
+        animation: glowing 1300ms infinite;
+      }
+      img{
+          width: 400px;
+          height: 300px;
+          margin: 0 auto;
+          border-radius: 4px;
+      }
+        </style>
+    <div>
+        <h1 class = "first">
+           Let's Go Camping
+        </h1> 
+        <span> <button type="submit" class="button">Book Now</button></span>         
+    </div>
+    <hr>
+    <h2>
+        Algonquin National Park
+    </h2>
+    <hr>
+    <div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Algonquin_Cache_Lake_Lookout.JPG/1920px-Algonquin_Cache_Lake_Lookout.JPG"  > 
+    </div>
+    <hr>
+    <p>
+        Algonquin Provincial Park is a provincial park established in 1893. It is located on the Canadian Shield, northeast of Toronto and northwest of Ottawa.
+        The formal recognition encompasses 7571 square kilometres of land, 15% of which is water, and the various buildings, structures, roadways and pathways contained therein.
+        The essence of Algonquin is in its vast interior of maple hills, rocky ridges, and thousands of lakes. The only way to explore the interior of this park is by canoe or on foot.
+        Access this incredible park via Highway 60. Here you can enjoy camping at one of eight campgrounds, hike one of 14 trails, take part in extensive Natural Heritage Education programs, and visit Algonquin’s exceptional Visitor Centre, Logging Museum and Art Centre.
+     </p>  
+    <section>
+        Outdoor adventures in Algonquin Park include:
+     <ul>
+    <li>  
+        Camping
+    </li>
+    <li>
+        Biking
+    </li>
+    <li>
+        Birding
+    </li>
+    <li>
+        Canoeing
+    </li>
+    <li>
+        Hiking
+    </li>
+    <li>
+        Swimming
+    </li>
+    </ul> 
+        <a href="https://en.wikipedia.org/wiki/Algonquin_Provincial_Park" target="blank">  Here is the link to collect more information about Algonquin </a><br>
+        &#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;&#x1f3d5;
+    </section>
+        <script>
+            function booking(){
+                let name = prompt("Please enter your name")
+                let email = prompt("Please enter your email address")
+                if(!name && !email){
+                    alert( "Enter yor name and email to proceed");
+                }
+                
+                else{
+                    window.location = "https://www.algonquinpark.on.ca/visit/camping/reservations_general.php";              
+          }
+            }
+            let changeButton = document.querySelector(".button");
+            changeButton.addEventListener("click", booking);
+        </script>
+    </body>
+</html>
